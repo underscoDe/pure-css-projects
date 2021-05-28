@@ -1,0 +1,44 @@
+body  {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 400px;
+	background-color:  rgba( 35, 223, 143, 1);
+}
+
+.S.letter {
+	position: absolute;
+	width: 18px;
+	height: 30px;
+	color: white;
+}
+
+.S.letter::before {
+	content: "";
+	position: absolute;
+	left: 1px;
+	top: 0;
+	border-radius: 50%;
+	transform: rotate(45deg);
+	border-top: 18px solid white;
+	border-left: 18px solid white;
+	border-right: 18px solid white;
+	border-bottom: 18px solid white;
+	width: 35px;
+	height: 35px;
+}
+
+.S.letter::after {
+	content: "";
+	position: absolute;
+	left: 1px;
+	top: 53px;
+	border-radius: 50%;
+	transform: rotate(225deg);
+	border-top: 18px solid white;
+	border-left: 18px solid white;
+	border-right: 18px solid white;
+	border-bottom: 18px solid white;
+	width: 35px;
+	height: 35px;
+}
