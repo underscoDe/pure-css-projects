@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	position: relative;
+}
+
+body::after {
+	content: 'Made with ❤️ by underscoDe';
+	color: white;
+	margin-top: 39rem;
+}
+
+div	{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border: 2px solid #fff;
+	background: repeating-conic-gradient(black, black 25%, white 25%, white 50%);
+	background-size: 100px 100px;
+}
+
+div::after {
+	position: absolute;
+	content: '';
+	width: 200px;
+	height: 200px;
+	border: 2px solid #fff;
+	background: repeating-conic-gradient(black, black 25%, white 25%, white 50%);
+	background-size: 100px 100px;
+	left: 100%;
+	top: 100%;
+}
+
+div::before {
+	position: absolute;
+	content: '';
+	width: 200px;
+	height: 200px;
+	border: 2px solid #fff;
+	background: repeating-conic-gradient(white, white 25%, black 25%, black 50%);
+	background-size: 100px 100px;
+	right: 100%;
+	top: 100%;
+}
+
+@media screen and (max-width: 576px) {
+	div::before {
+		right: -2px;
+	}
+}
